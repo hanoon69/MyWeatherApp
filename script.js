@@ -63,7 +63,7 @@ async function checkWeather() {
         document.getElementsByClassName("date-time-city")[0].children[3].innerHTML = `<h3>${time}</h3>`
     
         const apiKey = "8e6f0751c14c44785f4eb8dbb8b1e664";
-        const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=8e6f0751c14c44785f4eb8dbb8b1e664&units=metric`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=8e6f0751c14c44785f4eb8dbb8b1e664&units=metric`;
         const response = await fetch(apiUrl + '&appid=$(apiKey)');
   
         
